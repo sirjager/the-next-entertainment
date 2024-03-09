@@ -1,0 +1,24 @@
+{
+	"$schema": "./node_modules/nx/schemas/nx-schema.json",
+	"affected": {
+		"defaultBase": "master"
+	},
+	"plugins": [
+		{
+			"plugin": "@nx/eslint/plugin",
+			"options": {
+				"targetName": "lint"
+			}
+		},
+		{
+			"plugin": "@nx/next/plugin",
+			"options": {
+				"buildTargetName": "build",
+				"devTargetName": "dev",
+				"startTargetName": "start",
+				"serveStaticTargetName": "serve-static"
+			}
+		}
+	],
+	"nxCloudAccessToken": "ZDY2MDM0YWYtMTAyZi00MzJjLWI1MmEtOTQzMDM5Mjk1N2M5fHJlYWQtd3JpdGU="
+}
